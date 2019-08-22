@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { MainPageComponent } from './pages/main-page/main-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HowItWorkComponent } from './pages/how-it-work/how-it-work.component';
+import { JobOpeningsComponent } from './pages/job-openings/job-openings.component';
+import { EmployersComponent } from './pages/employers/employers.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { HowItWorkComponent } from './pages/how-it-work/how-it-work.component';
     HeaderComponent,
     MainPageComponent,
     FooterComponent,
-    HowItWorkComponent
+    HowItWorkComponent,
+    JobOpeningsComponent,
+    EmployersComponent
   ],
   imports: [
     BrowserModule,
