@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import "app/scss/variables";
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  color: $color-title;
+}
+
+.button-link {
+  width: 305px;
+  height: 65px;
+  margin-bottom: 70px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  color: $color-title;
+  background-color: $color-button;
+  box-shadow: 0 10px 20px rgba(36,42,47,0.35);
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+  &:hover {
+    background-color: $color-button-focus;
+    transform: scale(1.2);
+  }
+}
