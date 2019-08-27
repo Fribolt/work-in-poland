@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { categories } from '../main-page/categoties-config';
 
 @Component({
   selector: 'app-main-page',
@@ -6,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-page.component.scss']
 })
 export class MainPageComponent implements OnInit {
-
-  constructor() { }
+  categories = categories;
+  constructor() {
+  }
 
   ngOnInit() {
   }

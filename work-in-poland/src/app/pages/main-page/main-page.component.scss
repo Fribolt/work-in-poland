@@ -1,6 +1,5 @@
 
 .entry {
-  padding: 0 60px;
   background: url("~src/assets/images/entry-bg.jpg") center no-repeat;
 
   .title {
@@ -11,4 +10,91 @@
     line-height: 60px;
     word-wrap: break-word;
   }
+
+  .statistic {
+    display: flex;
+    justify-content: flex-start;
+    color: #fff;
+
+    &-item {
+      &:not(:last-child) {
+        margin-right: 120px;
+      }
+    }
+
+    .item-title {
+      font-weight: bold;
+      font-size: 60px;
+    }
+
+    .item-subtitle {
+      max-width: 170px;
+      line-height: 25px;
+      font-weight: 400;
+      font-size: 22px;
+    }
+  }
+}
+
+.benefits {
+
+  &-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+
+  .benefits-item {
+    max-width: 300px;
+  }
+
+  &-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 50px auto;
+    background: #000;
+  }
+
+  &-title {
+    font-weight: 400;
+    font-size: 20px;
+    color: #404040;
+  }
+}
+
+.how-it-work {
+  font-size: 20px;
+  color: #fff;
+  background: url("~src/assets/images/how-it-work-bg.jpg") center no-repeat;
+
+  .title {
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &-list {
+
+  }
+
+
+  .list-item {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+
+    .item-icon {
+      width: 40px;
+      height: 40px;
+      margin-right: 20px;
+      background: #000;
+    }
+
+    .item-title {
+
+    }
+  }
+
 }
