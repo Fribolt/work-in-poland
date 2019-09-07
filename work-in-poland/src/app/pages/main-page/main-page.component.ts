@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { categories } from '../main-page/categoties-config';
+import { categories } from './categoties.config';
+import { typeOfJobs } from './type-of-jobs.config';
+import { occupation } from './occupation.config';
 
 @Component({
   selector: 'app-main-page',
@@ -8,6 +10,9 @@ import { categories } from '../main-page/categoties-config';
 })
 export class MainPageComponent implements OnInit {
   categories = categories;
+  typeOfJobs = typeOfJobs;
+  occupation = occupation;
+
   constructor() {
   }
 

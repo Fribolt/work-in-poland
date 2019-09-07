@@ -96,5 +96,150 @@
 
     }
   }
+}
 
+.popular-categories {
+  text-align: center;
+
+  .title {
+    margin-bottom: 60px;
+    font-size: 30px;
+    color: #000;
+  }
+
+  .categories-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .category-item {
+    width: 350px;
+    margin: 0 10px 25px 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(36,42,47,0.2);
+    overflow: hidden;
+    transition: .5s;
+
+    .category-title {
+      padding: 15px 0;
+      text-align: center;
+      font-weight: 500;
+      font-size: 20px;
+      transition: .5s;
+    }
+
+    &:hover {
+      box-shadow: 0 0 20px rgba(36,42,47,0.35);
+
+      .category-title {
+        color: #e53935;
+      }
+    }
+  }
+}
+
+.types-of-jobs {
+  text-align: center;
+  background: url("~src/assets/images/type-of-jobs-bg.jpg") center no-repeat;
+  background-size: cover;
+
+  .title {
+    margin-bottom: 60px;
+    font-size: 30px;
+  }
+
+  .jobs-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .job-item {
+    width: 290px;
+    margin: 0 10px 25px 10px;
+    overflow: hidden;
+    transition: .5s;
+
+    img {
+      border-radius: 50%;
+      transition: .5s;
+    }
+
+    .job-title {
+      padding: 15px 0;
+      text-align: center;
+      font-weight: 500;
+      font-size: 20px;
+      color: #fff;
+      transition: .5s;
+    }
+
+    &:hover {
+      img {
+        box-shadow: 0 0 20px rgba(36,42,47,0.35);
+      }
+
+      .job-title {
+        color: #e53935;
+      }
+    }
+  }
+}
+
+.occupation {
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+
+  .title {
+    margin-bottom: 60px;
+    font-size: 30px;
+    color: #000;
+  }
+
+  .occupation-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .occupation-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 350px;
+    height: 95px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    background-image: linear-gradient(rgb(229, 119, 56) 0%, rgb(229, 59, 53) 100%);
+    box-shadow: 0 0 20px rgba(36,42,47,0.26);
+    transition: .5s;
+
+    img {
+      width: 40px;
+    }
+
+    .occupation-title {
+      padding: 15px 0;
+      text-align: center;
+      font-weight: 500;
+      transition: .5s;
+    }
+
+    .arrow-icon {
+      width: 26px;
+      height: 26px;
+      background: url("~src/assets/images/arrow-icon.png") center no-repeat;
+    }
+
+    &:hover {
+      background-image: linear-gradient(rgb(66, 156, 194) 0%, rgb(32, 51, 98) 100%);
+
+      .arrow-icon {
+        background: url("~src/assets/images/arrow-icon-hover.png") center no-repeat;
+      }
+    }
+  }
 }

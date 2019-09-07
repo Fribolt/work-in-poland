@@ -74,12 +74,37 @@
 </section>
 <section class="popular-categories">
   <div class="container">
-    <h1 class="title"></h1>
+    <h1 class="title">Популярные рубрики</h1>
 
     <div class="categories-container">
       <div class="category-item" *ngFor="let category of categories">
-        <div class="image" [ngClass]="category.background"></div>
+        <img [alt]="category.title" [src]="category.imageSource">
         <p class="category-title">{{category.title}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="types-of-jobs">
+  <div class="container">
+    <h1 class="title">Популярные сферы</h1>
+
+    <div class="jobs-container">
+      <div class="job-item" *ngFor="let job of typeOfJobs">
+        <img [alt]="job.title" [src]="job.imageSource">
+        <p class="job-title">{{job.title}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="occupation">
+  <div class="container">
+    <h1 class="title">Популярные специальности</h1>
+
+    <div class="occupation-container">
+      <div class="occupation-item" *ngFor="let occupationItem of occupation">
+        <img [alt]="occupationItem.title" [src]="occupationItem.imageSource">
+        <p class="occupation-title">{{occupationItem.title}}</p>
+        <div class="arrow-icon"></div>
       </div>
     </div>
   </div>
