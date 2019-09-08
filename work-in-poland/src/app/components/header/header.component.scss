@@ -5,7 +5,7 @@
   height: 100px;
 
   &.container {
-    padding: 0;
+    padding: 0 10px;
   }
 
   .logo {
@@ -20,22 +20,6 @@
   .link {
     &:focus {
       outline: none;
-    }
-  }
-
-  .main-menu {
-    .link {
-      font-size: 15px;
-      color: #282828;
-      text-decoration: none;
-
-      &:hover {
-        color: #e53c35;
-      }
-    }
-
-    .link:not(:last-child) {
-      margin-right: 20px
     }
   }
 }

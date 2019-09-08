@@ -36,11 +36,26 @@ p {
   color: $color-title;
   background-color: $color-button;
   box-shadow: 0 10px 20px rgba(36,42,47,0.35);
-  transition: all 1s;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
 
   &:hover {
     background-color: $color-button-focus;
-    transform: scale(1.2);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.link {
+  font-size: 15px;
+  color: #282828;
+  text-decoration: none;
+
+  &:hover {
+    color: #e53c35 !important;
+  }
+
+  &:not(:last-child) {
+    margin-right: 20px
   }
 }

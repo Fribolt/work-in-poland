@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  background: #151a29;
+
+  .container {
+    padding: 30px 10px;
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .link,
+  .copyright {
+    color: #fff;
+  }
+}
