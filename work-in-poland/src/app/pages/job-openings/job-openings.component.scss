@@ -1,3 +1,37 @@
+@import "~src/app/scss/variables";
+
+.header {
+  .container {
+    padding: 0 10px;
+  }
+  .job-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    .search {
+      width: 50%;
+      padding: 16px 15px;
+      border-radius: 30px;
+      border: 1px solid #000;
+      font-size: 20px;
+    }
+
+    .search-button {
+      width: 190px;
+      margin-left: -100px;
+      padding: 21px 0;
+      border-radius: 30px;
+      border: none;
+      text-align: center;
+      color: #fff;
+      background-color: #000;
+      cursor: pointer;
+    }
+  }
+}
+
 .job-opening {
-  height: calc(100vh - 222px);
+  height: calc(100vh - (122px + 100px + 97px));
 }
