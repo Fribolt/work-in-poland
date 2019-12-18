@@ -64,7 +64,15 @@
       border: 1px solid #d7d7d7;
       border-radius: 10px;
 
+      .main-information {
+        max-width: 500px;
+        padding-right: 30px;
+      }
+
       .about-job {
+        display: flex;
+        margin-bottom: 35px;
+
         .title {
           margin-bottom: 5px;
           font-weight: 700;
@@ -76,20 +84,24 @@
 
         .subtitle {
           margin-bottom: 10px;
-          font-weight: 500;
+          font-weight: 700;
           font-size: 18px;
           color: rgb(40, 40, 40);
         }
 
-        .tag {
-          display: inline-block;
-          margin-right: 5px;
-          padding: 2px 4px;
-          text-align: center;
-          font-weight: 400;
-          font-size: 14px;
-          color: rgb(255, 255, 255);
-          background: rgb(125, 167, 217);
+        .tag-container {
+          margin-bottom: 15px;
+
+          .tag {
+            display: inline-block;
+            margin-right: 5px;
+            padding: 2px 4px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 14px;
+            color: rgb(255, 255, 255);
+            background: rgb(125, 167, 217);
+          }
         }
 
         .requirements {
@@ -98,48 +110,111 @@
           line-height: 18px;
           color: rgb(40, 40, 40);
         }
+      }
 
-        .condition-container {
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          flex-wrap: wrap;
+      .employer {
+        flex: 1;
+        color: #282828;
+
+        .payment-per-hour {
           margin-bottom: 5px;
+          text-align: left;
+          font-weight: 700;
+          font-size: 24px;
+        }
 
-          .condition {
-            padding-left: 15px;
-            font-weight: 300;
-            font-size: 12px;
-            color: rgb(40, 40, 40);
-            margin: 0 7px 3px 0;
-            background-position: left center;
-            background-repeat: no-repeat;
-            background-size: 12px;
+        .payment-per-month {
+          margin: 0 0 20px;
+          text-align: left;
+          font-weight: 400;
+          font-size: 14px;
+        }
 
-            &-employment {
-              background-image: url("src/assets/images/condition/1.svg");
-            }
+        &-information {
+          display: flex;
 
-            &-language {
-              background-image: url("src/assets/images/condition/2.svg");
-            }
+          .flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+          }
 
-            &-eat {
-              background-image: url("src/assets/images/condition/3.svg");
-            }
+          .employer-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 75px;
+            height: 75px;
+            overflow: hidden;
+            margin-right: 15px;
+            border: 1px solid #dadada;
 
-            &-housing {
-              background-image: url("src/assets/images/condition/4.svg");
-            }
-
-            &-international-passport {
-              background-image: url("src/assets/images/condition/5.svg");
-            }
-
-            &-experience {
-              background-image: url("src/assets/images/condition/6.svg");
+            img {
+              width: 75px;
+              height: auto;
             }
           }
+
+          .employer-name,
+          .employer-address {
+            font-weight: 600;
+            font-size: 14px;
+            word-break: break-all;
+          }
+        }
+      }
+
+      .condition-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+
+        .condition {
+          padding-left: 15px;
+          font-weight: 300;
+          font-size: 12px;
+          color: rgb(40, 40, 40);
+          margin: 0 7px 3px 0;
+          background-position: left center;
+          background-repeat: no-repeat;
+          background-size: 12px;
+
+          &-employment {
+            background-image: url("../../../assets/images/job-card/condition/1.svg");
+          }
+
+          &-language {
+            background-image: url("../../../assets/images/job-card/condition/2.svg");
+          }
+
+          &-eat {
+            background-image: url("../../../assets/images/job-card/condition/3.svg");
+          }
+
+          &-housing {
+            background-image: url("../../../assets/images/job-card/condition/4.svg");
+          }
+
+          &-international-passport {
+            background-image: url("../../../assets/images/job-card/condition/5.svg");
+          }
+
+          &-experience {
+            background-image: url("../../../assets/images/job-card/condition/6.svg");
+          }
+        }
+      }
+
+      .gender {
+        width: 20px;
+        height: 20px;
+        margin: 0 3px 0 0;
+
+        &.male {
+          background: url("src/assets/images/job-card/male.svg") center no-repeat;
         }
       }
     }
