@@ -4,7 +4,7 @@ export interface JobCard {
   tags: string[];
   requirements: string;
   employer: Employer;
-  condition: Condition[];
+  conditions: Condition[];
   gender: string[];
 }
 

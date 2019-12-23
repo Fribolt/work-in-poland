@@ -1,37 +1,32 @@
 <div class="job-card">
   <div class="about-job">
     <div class="main-information">
-      <h4 class="title">РАБОТНИК НА ФЕРМУ</h4>
-      <p class="subtitle">Сельское хозяйство и садовничество</p>
-      <div class="tag-container">
-        <div class="tag">Сельхозрабочий /Работник на ферму</div>
+      <h4 class="title">{{jobCard.title}}</h4>
+      <p class="subtitle">{{jobCard.subtitle}}</p>
+      <div class="tag-container" *ngFor="let tag of jobCard.tags">
+        <div class="tag">{{tag}}</div>
       </div>
-      <p class="requirements">Требования: Срочно на ферму с коровами Lapy (недалеко от Bialostoka)требуются мужчина
-        работник для выполнения несложных обязанностей по кормлению и уборке на ферме с коровами и бычками .Желательно
-        умение ездить на тракторе, но не обязательно. Оплата 3000 злотых в месяц плюс бесплатное питание и
-        проживание.Своевременная оплата,хорошая хозяйка.</p>
+      <p class="requirements">{{jobCard.requirements}}</p>
     </div>
     <div class="employer">
-      <div class="payment-per-hour">20 zł / час</div>
-      <div class="payment-per-month">6700 – 8900 zł / мес</div>
+      <div class="payment-per-hour">{{jobCard.employer.paymentPerHour}}</div>
+      <div class="payment-per-month">{{jobCard.employer.paymentPerMonth}}</div>
       <div class="employer-information">
         <div class="employer-logo">
           <img src="../../../assets/images/job-card/employer-logo.png" alt="Employer logo">
         </div>
         <div class="flex-container">
-          <div class="employer-name">SNK Group sp. z o.o.</div>
-          <div class="employer-address">Познань</div>
+          <div class="employer-name">{{jobCard.employer.employerName}}</div>
+          <div class="employer-address">{{jobCard.employer.employerAddress}}</div>
         </div>
       </div>
     </div>
   </div>
   <div class="condition-container">
-    <div class="condition condition-employment">Постоянная работа</div>
-    <div class="condition condition-language">Не требуется знание языка</div>
-    <div class="condition condition-eat">Предоставляем питание</div>
-    <div class="condition condition-housing">Предоставляем жилье</div>
-    <div class="condition condition-international-passport">Только с рабочей визой</div>
-    <div class="condition condition-experience">Не требуется опыт</div>
+    <div *ngFor="let condition of jobCard.conditions"
+         class="condition {{condition.conditionType}}">
+      {{condition.title}}
+    </div>
   </div>
-  <div class="gender male"></div>
+  <div class="gender {{jobCard.gender}}"></div>
 </div>
