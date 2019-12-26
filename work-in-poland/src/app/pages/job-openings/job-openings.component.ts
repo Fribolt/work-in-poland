@@ -8,11 +8,21 @@ import { jobCardList } from './job-card-list';
 })
 export class JobOpeningsComponent implements OnInit {
 
+  searchValue: string;
   jobCardList = jobCardList;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  // TODO to realize this method
+
+  searchByWords(value) {
+    // console.log(value);
+    //
+    // this.jobCardList.forEach((item: JobCard) => {
+    // })
   }
 
 }

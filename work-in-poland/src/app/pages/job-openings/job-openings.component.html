@@ -1,8 +1,8 @@
 <header class="header">
   <div class="container">
     <div class="job-search">
-      <input class="search" type="text" placeholder="Введите ключевые слова">
-      <button class="search-button" type="button">Поиск вакансий</button>
+      <input [(ngModel)]="searchValue" class="search" type="text" placeholder="Введите ключевые слова">
+      <button class="search-button" type="button" (click)="searchByWords(searchValue)">Поиск вакансий</button>
     </div>
     <p class="search-example">
       Например:
@@ -13,7 +13,7 @@
 <section class="job-opening">
   <div class="container">
     <aside class="filters">
-
+      <app-job-filters></app-job-filters>
     </aside>
     <main class="jobs">
       <app-job-card *ngFor="let jobCar of jobCardList"

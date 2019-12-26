@@ -1,4 +1,4 @@
-import {JobCard} from '../../models/job-card.model';
+import { JobCard } from '../../models/job-card.model';
 
 export const jobCardList: JobCard[] = [
   {
