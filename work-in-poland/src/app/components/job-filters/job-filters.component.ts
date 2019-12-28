@@ -1,5 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { JobCard } from '../../models/job-card.model';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-job-filters',
@@ -8,12 +9,19 @@ import { JobCard } from '../../models/job-card.model';
 })
 export class JobFiltersComponent implements OnInit {
 
+  constructor(private formBuilder: FormBuilder) { }
+
   @Input()
   jobCardList: JobCard[];
 
-  constructor() { }
+  @Output()
+  jobFiltering = new EventEmitter();
+
+  jobFiltersForm = this.formBuilder.group({
+    salaryInMonth: null,
+  });
 
   ngOnInit() {
+    // this.jobFiltersForm.valueChanges.subscribe(value => console.log(value));
   }
-
 }

@@ -16,6 +16,18 @@ export class JobOpeningsComponent implements OnInit {
   ngOnInit() {
   }
 
+  jobFiltering(filterValue) {
+    this.jobCardList.filter(jobCard => {
+      const paymentPerMonth = jobCard.employer.paymentPerMonth;
+      const paymentPerMonth1 = paymentPerMonth.split(/[\-\/]/);
+      const minPayment = paymentPerMonth[0].trim();
+      const maxPayment = paymentPerMonth[1].trim();
+      console.log(minPayment);
+      console.log(maxPayment);
+      console.log(filterValue);
+    });
+  }
+
   // TODO to realize this method
 
   searchByWords(value) {

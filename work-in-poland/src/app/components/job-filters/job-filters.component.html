@@ -1,4 +1,31 @@
-<form>
+<form [formGroup]="jobFiltersForm"
+      (submit)="jobFiltering.emit(jobFiltersForm.value)">
   <h5 class="subtitle">Зарплата в месяц</h5>
-  <div></div>
+  <div>
+    <div class="radio-button-container">
+      <label>
+        <input type="radio" formControlName="salaryInMonth" name="salaryInMonth" value="0" class="radio-button">
+        Не указано
+      </label>
+    </div>
+    <div class="radio-button-container">
+      <label>
+        <input type="radio" formControlName="salaryInMonth" name="salaryInMonth" value="2145" class="radio-button">
+        0 – 2145 zł
+      </label>
+    </div>
+    <div class="radio-button-container">
+      <label>
+        <input type="radio" formControlName="salaryInMonth" name="salaryInMonth" value="4290" class="radio-button">
+        2145 – 4290 zł
+      </label>
+    </div>
+    <div class="radio-button-container">
+      <label>
+        <input type="radio" formControlName="salaryInMonth" name="salaryInMonth" value="8580" class="radio-button">
+        4290 – 8580 zł
+      </label>
+    </div>
+  </div>
+  <button type="submit">Подобрать вакансии</button>
 </form>

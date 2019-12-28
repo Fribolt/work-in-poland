@@ -10,7 +10,7 @@ import { HowItWorkComponent } from './pages/how-it-work/how-it-work.component';
 import { JobOpeningsComponent } from './pages/job-openings/job-openings.component';
 import { EmployersComponent } from './pages/employers/employers.component';
 import { JobCardComponent } from './components/job-card/job-card.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { JobFiltersComponent } from './components/job-filters/job-filters.component';
 
 @NgModule({
@@ -28,7 +28,8 @@ import { JobFiltersComponent } from './components/job-filters/job-filters.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

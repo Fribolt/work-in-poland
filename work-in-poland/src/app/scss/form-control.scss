@@ -1,0 +1,35 @@
+input,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type='radio'] {
+  margin: 0;
+}
+
+.radio-button-container {
+
+}
+
+.button-link {
+  width: 305px;
+  height: 65px;
+  margin-bottom: 70px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  color: $color-title;
+  background-color: $color-button;
+  box-shadow: 0 10px 20px rgba(36,42,47,0.35);
+
+  &:hover {
+    background-color: $color-button-focus;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

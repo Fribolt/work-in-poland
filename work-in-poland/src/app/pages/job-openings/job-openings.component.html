@@ -13,7 +13,7 @@
 <section class="job-opening">
   <div class="container">
     <aside class="filters">
-      <app-job-filters></app-job-filters>
+      <app-job-filters (jobFiltering)="jobFiltering($event)"></app-job-filters>
     </aside>
     <main class="jobs">
       <app-job-card *ngFor="let jobCar of jobCardList"
