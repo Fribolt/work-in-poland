@@ -8,7 +8,7 @@ export const jobCardList: JobCard[] = [
     requirements: 'Требования: Срочно на ферму с коровами Lapy (недалеко от Bialostoka)требуются мужчина работник для выполнения несложных обязанностей по кормлению и уборке на ферме с коровами и бычками. Желательно умение ездить на тракторе, но не обязательно. Оплата 3000 злотых в месяц плюс бесплатное питание и проживание.Своевременная оплата,хорошая хозяйка.',
     employer: {
       paymentPerHour: '20',
-      paymentPerMonth: '6700 – 8900',
+      paymentPerMonth: '200 – 1000',
       employerName: 'SNK Group sp. z o.o.',
       employerAddress: 'Познань',
       employerLogoSource: '../../../assets/images/job-card/employer-logo.png',
@@ -30,7 +30,7 @@ export const jobCardList: JobCard[] = [
     requirements: 'Требования: Срочно на ферму с коровами Lapy (недалеко от Bialostoka)требуются мужчина работник для выполнения несложных обязанностей по кормлению и уборке на ферме с коровами и бычками. Желательно умение ездить на тракторе, но не обязательно. Оплата 3000 злотых в месяц плюс бесплатное питание и проживание.Своевременная оплата,хорошая хозяйка.',
     employer: {
       paymentPerHour: '666',
-      paymentPerMonth: '6700 – 8900',
+      paymentPerMonth: '2200 – 4000',
       employerName: 'SNK Group sp. z o.o.',
       employerAddress: 'Познань',
       employerLogoSource: '../../../assets/images/job-card/employer-logo.png',
@@ -52,7 +52,7 @@ export const jobCardList: JobCard[] = [
     requirements: 'Требования: Срочно на ферму с коровами Lapy (недалеко от Bialostoka)требуются мужчина работник для выполнения несложных обязанностей по кормлению и уборке на ферме с коровами и бычками. Желательно умение ездить на тракторе, но не обязательно. Оплата 3000 злотых в месяц плюс бесплатное питание и проживание.Своевременная оплата,хорошая хозяйка.',
     employer: {
       paymentPerHour: '99',
-      paymentPerMonth: '6700 – 8900',
+      paymentPerMonth: '4300 – 8500',
       employerName: 'SNK Group sp. z o.o.',
       employerAddress: 'Познань',
       employerLogoSource: '../../../assets/images/job-card/employer-logo.png',

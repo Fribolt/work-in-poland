@@ -11,21 +11,36 @@ export class JobOpeningsComponent implements OnInit {
   searchValue: string;
   jobCardList = jobCardList;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
-  jobFiltering(filterValue) {
-    this.jobCardList.filter(jobCard => {
+  splitSalaryRange(salaryRange: string): string[] {
+    // TODO сделать так что бы в массив не попадал лишний элемент "-"
+    const rangeArray  = salaryRange.split(/[\s\-:]/);
+
+    // TODO возвращаю только чилса без тире
+    return [rangeArray[0], rangeArray[2]];
+  }
+
+  filterBySalary(filterValue) {
+    this.jobCardList = this.jobCardList.filter(jobCard => {
       const paymentPerMonth = jobCard.employer.paymentPerMonth;
-      const paymentPerMonth1 = paymentPerMonth.split(/[\-\/]/);
-      const minPayment = paymentPerMonth[0].trim();
-      const maxPayment = paymentPerMonth[1].trim();
-      console.log(minPayment);
-      console.log(maxPayment);
-      console.log(filterValue);
+      const rangePaymentPerMonth = this.splitSalaryRange(paymentPerMonth);
+      const rangeFilterValue = this.splitSalaryRange(filterValue);
+
+      return rangePaymentPerMonth[0] >= rangeFilterValue[0] && rangePaymentPerMonth[1] <= rangeFilterValue[1];
     });
+  }
+
+  jobFiltering(filterValue): void {
+    this.jobCardList = jobCardList;
+
+    if (filterValue.salaryInMonth) {
+      this.filterBySalary(filterValue.salaryInMonth);
+    }
   }
 
   // TODO to realize this method
