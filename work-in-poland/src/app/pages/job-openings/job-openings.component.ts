@@ -17,6 +17,8 @@ export class JobOpeningsComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  // TODO возможно стоит вынести логику фильтрации в компонент фильтров
   splitSalaryRange(salaryRange: string): string[] {
     // TODO сделать так что бы в массив не попадал лишний элемент "-"
     const rangeArray  = salaryRange.split(/[\s\-:]/);

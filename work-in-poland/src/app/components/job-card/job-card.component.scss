@@ -123,27 +123,27 @@
       background-repeat: no-repeat;
       background-size: 12px;
 
-      &-employment {
+      &.employment {
         background-image: url("../../../assets/images/job-card/condition/1.svg");
       }
 
-      &-language {
+      &.language {
         background-image: url("../../../assets/images/job-card/condition/2.svg");
       }
 
-      &-eat {
+      &.eat {
         background-image: url("../../../assets/images/job-card/condition/3.svg");
       }
 
-      &-housing {
+      &.housing {
         background-image: url("../../../assets/images/job-card/condition/4.svg");
       }
 
-      &-international-passport {
+      &.international-passport {
         background-image: url("../../../assets/images/job-card/condition/5.svg");
       }
 
-      &-experience {
+      &.experience {
         background-image: url("../../../assets/images/job-card/condition/6.svg");
       }
     }

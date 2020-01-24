@@ -1,7 +1,7 @@
 <form [formGroup]="jobFiltersForm"
       (submit)="jobFiltering.emit(jobFiltersForm.value)">
   <h5 class="subtitle">Зарплата в месяц</h5>
-  <div>
+  <div class="salary-month">
     <div class="radio-button-container">
       <label>
         <input type="radio" formControlName="salaryInMonth" name="salaryInMonth" [value]="null" class="radio-button">
@@ -25,6 +25,71 @@
         <input type="radio" formControlName="salaryInMonth" name="salaryInMonth" value="4290 – 8580" class="radio-button">
         4290 – 8580 zł
       </label>
+    </div>
+  </div>
+  <div class="condition-group" formGroupName="condition">
+    <h5 class="subtitle">Знание языка</h5>
+    <div class="language-required">
+      <div class="radio-button-container">
+        <label>
+          <input type="radio" formControlName="languageRequired" name="languageRequired" [value]="null" class="radio-button">
+          Не указано
+        </label>
+      </div>
+      <div class="radio-button-container">
+        <label>
+          <input type="radio" formControlName="languageRequired" name="languageRequired" [value]="true" class="radio-button">
+          Требуется
+        </label>
+      </div>
+      <div class="radio-button-container">
+        <label>
+          <input type="radio" formControlName="languageRequired" name="languageRequired" [value]="false" class="radio-button">
+          Не требуется
+        </label>
+      </div>
+    </div>
+    <h5 class="subtitle">Опыт Работы</h5>
+    <div class="work-experience">
+      <div class="radio-button-container">
+        <label>
+          <input type="radio" formControlName="workExperience" name="workExperience" [value]="null" class="radio-button">
+          Не указано
+        </label>
+      </div>
+      <div class="radio-button-container">
+        <label>
+          <input type="radio" formControlName="workExperience" name="workExperience" [value]="true" class="radio-button">
+          Требуется
+        </label>
+      </div>
+      <div class="radio-button-container">
+        <label>
+          <input type="radio" formControlName="workExperience" name="workExperience" [value]="false" class="radio-button">
+          Не требуется
+        </label>
+      </div>
+    </div>
+    <h5 class="subtitle">питание</h5>
+    <div class="pid-food">
+      <div class="radio-button-container">
+        <label>
+          <input type="radio" formControlName="paidFood" name="paidFood" [value]="null" class="radio-button">
+          Не указано
+        </label>
+      </div>
+      <div class="radio-button-container">
+        <label>
+          <input type="radio" formControlName="paidFood" name="paidFood" [value]="true" class="radio-button">
+          Требуется
+        </label>
+      </div>
+      <div class="radio-button-container">
+        <label>
+          <input type="radio" formControlName="paidFood" name="paidFood" [value]="false" class="radio-button">
+          Не требуется
+        </label>
+      </div>
     </div>
   </div>
   <button type="submit">Подобрать вакансии</button>

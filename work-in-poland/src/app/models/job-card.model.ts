@@ -24,6 +24,7 @@ export interface Employer {
 export interface Condition {
   title: string;
   conditionType: string;
+  required: boolean;
 }
 
 export interface Gender {

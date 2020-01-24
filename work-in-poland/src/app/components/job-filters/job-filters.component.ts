@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { JobCard } from '../../models/job-card.model';
 import { FormBuilder } from '@angular/forms';
+import { group } from '@angular/animations';
 
 @Component({
   selector: 'app-job-filters',
@@ -19,6 +20,11 @@ export class JobFiltersComponent implements OnInit {
 
   jobFiltersForm = this.formBuilder.group({
     salaryInMonth: null,
+    condition: this.formBuilder.group({
+      languageRequired: null,
+      workExperience: null,
+      pidFood: null,
+    })
   });
 
   ngOnInit() {
